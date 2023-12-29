@@ -1,0 +1,16 @@
+{
+	"name": "ぜろちゃんねるプラスと、Node.jsプロジェクト",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "node",
+	"workspaceFolder": "/app",
+
+	"postCreateCommand": "npm install",
+	
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}

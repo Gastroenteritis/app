@@ -1,0 +1,23 @@
+version: '3'
+services:
+  node:
+    image: node:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - ..:/app
+    command: tail -f /dev/null
+    
+  zerochplus:
+    image: zerochplus
+    build: ./zerochplus-docker
+    ports:
+      - 8080:80
+    # deploy:
+      # resources:
+      #   limits:
+      #     cpus: '4.0'
+      #     memory: 4G
+      #   reservations:
+      #     cpus: '2.0'
+      #     memory: 2G
