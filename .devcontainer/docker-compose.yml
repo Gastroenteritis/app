@@ -13,12 +13,3 @@ services:
     build: ./zerochplus-docker
     ports:
       - 8080:80
-    deploy:
-      # パフォーマンスに関する設定
-      resources:
-        limits:
-          cpus: '8.0'
-          memory: 8G
-        reservations:
-          cpus: '4.0'
-          memory: 4G
